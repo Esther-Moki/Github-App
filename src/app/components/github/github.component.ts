@@ -13,19 +13,26 @@ import { GithubService }  from  '../../github.service';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  users:User[] = [];
+  public githubUser!:string;
+
+  constructor(){}
+
+  public searchUser(){
+    
+  }
+
+  // users:User[] = [];
 
 
-  constructor( private githubService: GithubService ) {
-   this.githubService.getGithubInfo().subscribe(github =>{
-        console.log(github)
+  // constructor( private githubService: GithubService ) {
+  //  this.githubService.getGithubInfo().subscribe(github =>{
+  //       console.log(github)
 
-   }); 
+  //  }); 
   // this.users:users = githubService.getGithubInfo()
   
   // this.http.getGithubInfo().subscribe()
   
-  }
     
 
   ngOnInit(): void {

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable} from 'rxjs';
 import { User } from './User';
 // import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
 
 // import 'rxjs/add/operator/map';
 
@@ -23,8 +24,8 @@ export class GithubService {
     this.username ='Esther-Moki';
 
   }
-  getGithubInfo():Observable<User[]>{
-    return this.http.get<User[]>(this.apiUrl);
+  getGithubInfo():Observable<any>{
+    return this.http.get<any>(this.apiUrl);
 
   }
 
