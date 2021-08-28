@@ -1,8 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-import { User } from '../../User';
-import { USERS} from '../../mock-users';
 import { GithubService }  from  '../../github.service';
 
 
@@ -13,13 +10,40 @@ import { GithubService }  from  '../../github.service';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  public githubUser!:string;
+  github!:any;
+  // public githubUser!:string;
 
-  constructor(){}
+  // public githubUserInfo!:any;
+  // public githubRepoInfo!:any;
 
-  public searchUser(){
+  constructor(private githubService: GithubService){
+    this.githubService.getGithubInfo().subscribe(github =>{
+      console.log(github)
+      this.github = github;
+    });
     
+
   }
+
+ 
+
+    
+  
+  
+    ngOnInit(): void {}
+
+  }
+
+
+
+    
+  // public searchUser(){
+  //   this.githubService. searchUser().subscribe()
+    
+    // this.githubService.githubRepoInfo( this.githubUser!).subscribe()
+
+
+  
 
   // users:User[] = [];
 
@@ -35,19 +59,18 @@ export class GithubComponent implements OnInit {
   
     
 
-  ngOnInit(): void {
+  
     // this.githubService.getGithubInfo().subscribe((users) => (this.users= users));
     
 
     
-    }
+    
 
     // this.http.get<ApiResponse>("https://api.github.com/users/").subscribe(data=>{
       // Succesful API request
     
 
 
-
-  }
+  
 
 
