@@ -30,6 +30,16 @@ export class GithubService {
   "&client_secret=" + this.clientsecret);
    }
 
+   getGithubRepos():Observable<any>{
+    return this.http.get<any>("https://api.github.com/users/" +  this.username + "/repos?client_id=" + this.clientid +
+    "&client_secret=" + this.clientsecret);
+     }
+  
+     updateGithub(username:string){
+       this.username = username;
+
+     }
+
 }
 
 

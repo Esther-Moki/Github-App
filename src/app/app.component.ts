@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { GithubService }  from  './github.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 
 
 

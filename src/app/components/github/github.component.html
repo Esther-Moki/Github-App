@@ -1,5 +1,32 @@
 <h1 class="text-center" class="topHeader">GITHUB</h1>
 
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header bg-secondary text-white">
+        <h2>Github User Search</h2>
+      </div>
+      <div class="card-body">
+        <form >
+          <div class="form-group">
+            <input type="text" name= "username" class="form-control" placeholder="Enter your Github name" [(ngModel)] ="username" (keyup)="searchUser()">
+            <button type="submit" class="btn btn-primary">SEARCH</button>
+          
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</div> -->
+
+
+
+
+
+
+
 
 <div *ngIf="github">
   <div class = "card">
@@ -35,6 +62,21 @@
     </div>
 
   </div>
+
+  <div class="card">
+    <div class="card-header bg-secondary ">
+      <h2>Github Repositories</h2>
+
+    </div>
+    <div class="card-body" *ngFor = 'let repo of repos'>
+      {{repo.name}} <a href="{{ repo.html_url}}" class="btn btn-success" target="_blank">View the project </a>
+      <p>{{repo.description}}</p>
+    </div>
+
+  </div>
+
+
+
 
 </div>
 
