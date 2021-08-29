@@ -22,3 +22,13 @@
  color: #ffffff;
  font-weight: bold;
 }
+.container-fluid{
+  margin-top: 2%;
+}
+.picPart{
+  margin-left: 2% ;
+  margin-right: 2%;
+}
+.picOne{
+  width: 285px;
+}

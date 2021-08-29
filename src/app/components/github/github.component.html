@@ -23,9 +23,35 @@
   </div> 
 
 </div>
+<div class="container-fluid ">
+  <div class="row picPart">
+    <div class="col-md-3 ">
+      <div class="card">
+        <img src="{{github.avatar_url}}" alt="" class="picOne">
+        <h3 class="card-title">{{github.name}}</h3>
+        <p class="card-text">{{github.bio}}</p>
+        <a href="{{ github.html_url}}" class="btn btn-dark" target="_blank" >User's Profile on Github</a>
+      
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-header">
+
+        </div>
+
+       <div class="card-body">
+        
+
+        </div>
+      </div>  
+
+    </div>
+  </div>
+</div>
 
 
-<div *ngIf="github">
+<!-- <div *ngIf="github">
   <div class = "card ">
     <div class="card-header">
       {{github.name}} <small>{{github.login}}</small>
@@ -75,7 +101,7 @@
 
 
 
-</div>
+</div> -->
 
 
 
