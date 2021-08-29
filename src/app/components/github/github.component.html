@@ -8,11 +8,12 @@
           <h2 class="secondHeader">Search Github</h2>
         </div>
         <div class="card-body">
-          <form >
+          <form>
             <div class="form-group">
-              <input type="text" name= "username" class="form-control" placeholder="Enter your Github name" [(ngModel)] ="username" (keyup)="searchUser()">
+              <input type="text" name="username" class="form-control" placeholder="Enter your Github name"
+                [(ngModel)]="username" (keyup)="searchUser()">
               <button type="submit" class="btn  mainButton">SEARCH</button>
-            
+
             </div>
           </form>
         </div>
@@ -20,7 +21,7 @@
       </div>
 
     </div>
-  </div> 
+  </div>
 
 </div>
 
@@ -31,8 +32,8 @@
         <img src="{{github.avatar_url}}" alt="" class="picOne">
         <h3 class="card-title">{{github.name}}</h3>
         <p class="card-text">{{github.bio}}</p>
-        <a href="{{ github.html_url}}" class="btn btn-dark" target="_blank" >User's Profile on Github</a>
-      
+        <a href="{{ github.html_url}}" class="btn btn-dark" target="_blank">User's Profile on Github</a>
+
       </div>
     </div>
     <div class="col-md-9">
@@ -44,9 +45,9 @@
           <button type="button" class="btn btn-danger buttonSpacing">{{github.following}} Following</button>
         </div>
 
-       <div class="card-body">
-         <ul class="list-group">
-           <li class="list-group-item">
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
               Username: <span class="font-weight-bold">{{github.name}}</span>
             </li>
             <li class="list-group-item">
@@ -66,7 +67,7 @@
             </li>
           </ul>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
 
@@ -74,28 +75,19 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-         <h4>Github Repositories</h4>
+          <h4>Github Repositories</h4>
         </div>
         <div class="card-body">
           <ul class="list-group">
-            <li class="list-group-item reposDisplay" *ngFor = 'let repo of repos' >
-              {{repo.name}} <a href="{{ github.html_url}}" class="font-weight-bold btn btn-info" target="_blank">View the project</a>
+            <li class="list-group-item reposDisplay" *ngFor='let repo of repos'>
+              {{repo.name}} <a href="{{ github.html_url}}" class="font-weight-bold btn btn-info" target="_blank">View
+                the project</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  
+
 
 </div>
-
-
-     
-
-
-
-
-
-
-  
