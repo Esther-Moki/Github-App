@@ -6,18 +6,10 @@ import { Observable} from 'rxjs';
 
 
 // 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
-// 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
-
-
-
-// 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
 @Injectable({
   providedIn: 'root'
 })
 export class GithubService {
-  // private apiUrl ='https://api.github.com/users'
-  // public githubUserInfo!:any;
-  // public githubRepoInfo!:any;
 
   private username!:string;
   private clientid = '2986e944918aa9f513f6';
@@ -49,36 +41,5 @@ export class GithubService {
 
 
 
-
-
-  //  public  searchUser():Observable<any>{
-    //  let apiUrl = 'https://api.github.com/users'+this.searchUser;
-    // return this.http.get<any>(this.apiUrl)
     
-
-    // public  getRepo():Observable<any[]>{
-    //   let apiUrl = `https://api.github.com/users${this.searchUser}/repos`;
-    //  return this.http.get<any[]>(this.apiUrl)
-    //  }
-
-    // public handleErrors(error:HttpErrorResponse){
-
-    // };
-    // https://api.github.com/users/USERNAME/repos
-
-
-  // getGithubInfo():Observable<>{
-  
-      // return this.http.get<username>("https://api.github.com/users/");
-     
-
-
-                                                                 
-  // }
-
-
-
-
-
-// return this.http.get("https://api.github.com/users/" + this.username)
                                                                  
