@@ -77,8 +77,9 @@
         </div>
         <div class="card-body">
           <ul class="list-group">
-            <li class="list-group-item">
-
+            <li class="list-group-item reposDisplay" *ngFor = 'let repo of repos' >
+              {{repo.name}} <a href="{{ github.html_url}}" class="font-weight-bold text-primary" target="_blank">View the project</a>
+             <span></span>
             </li>
           </ul>
 
