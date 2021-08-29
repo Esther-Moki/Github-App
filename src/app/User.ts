@@ -1,6 +1,7 @@
-// import { USERS } from './mock-users';
+import { USERS } from './mock-users';
 
-// export interface User{
-//   id?:number;
-//   username:string;
-// }
+export interface User{
+  id?:number;
+  username:string;
+
+}
