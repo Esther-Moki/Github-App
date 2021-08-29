@@ -37,13 +37,42 @@
     <div class="col-md-9">
       <div class="card">
         <div class="card-header">
+          <button type="button" class="btn btn-primary buttonSpacing">{{github.followers}} Followers</button>
+          <button type="button" class="btn btn-success buttonSpacing">{{github.public_repos}} Repositories</button>
+          <button type="button" class="btn btn-warning buttonSpacing">{{github.public_gists}} Gists</button>
+          <button type="button" class="btn btn-danger buttonSpacing">{{github.following}} Following</button>
 
+
+          <!-- <span class="badge badge-pill badge-primary mr-3" >{{github.followers}} Followers</span>
+          <span class="badge badge-success mr-3">{{github.public_repos}} Repositories</span>
+          <span class="badge badge-warning mr-3">{{github.public_gists}} Gists</span>
+          <span class="badge badge-danger mr-3 ">{{github.following}} Following</span>
+          <a href="#" class="badge badge-primary">Primary</a> -->
         </div>
 
        <div class="card-body">
-        
-
+         <ul class="list-group">
+           <li class="list-group-item">
+              Username: <span class="font-weight-bold">{{github.name}}</span>
+            </li>
+            <li class="list-group-item">
+              Location:{{github.location}}
+            </li>
+            <li class="list-group-item">
+              Email:{{github.email}}
+            </li>
+            <li class="list-group-item">
+              Company:{{github.company}}
+            </li>
+            <li class="list-group-item">
+              Member since:{{github.created_at| date}}
+            </li>
+            <li class="list-group-item">
+              Profile Url:{{ github.html_url}}
+            </li>
+          </ul>
         </div>
+
       </div>  
 
     </div>
