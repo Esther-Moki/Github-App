@@ -36,7 +36,7 @@ export class GithubComponent implements OnInit {
 
   }
 
-  searchUser(){
+  public searchUser(){
     this.githubService.updateGithub(this.username);
     this.githubService.getGithubInfo().subscribe(github =>{
       console.log(github)

@@ -1,35 +1,32 @@
-<h1 class="text-center" class="topHeader">GITHUB</h1>
+<div class="container">
+  <h1 class="topHeader">GITHUB USER SEARCH</h1>
 
-<div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-header bg-secondary text-white">
-        <h2>Github User Search</h2>
-      </div>
-      <div class="card-body">
-        <form >
-          <div class="form-group">
-            <input type="text" name= "username" class="form-control" placeholder="Enter your Github name" [(ngModel)] ="username" (keyup)="searchUser()">
-            <button type="submit" class="btn btn-primary">SEARCH</button>
-          
-          </div>
-        </form>
+  <div class="row">
+    <div class="col">
+      <div class="card frontPart">
+        <div class="card-header topPart">
+          <h2 class="secondHeader">Search Github</h2>
+        </div>
+        <div class="card-body">
+          <form >
+            <div class="form-group">
+              <input type="text" name= "username" class="form-control" placeholder="Enter your Github name" [(ngModel)] ="username" (keyup)="searchUser()">
+              <button type="submit" class="btn  mainButton">SEARCH</button>
+            
+            </div>
+          </form>
+        </div>
+
       </div>
 
     </div>
+  </div> 
 
-  </div>
-</div> -->
-
-
-
-
-
-
+</div>
 
 
 <div *ngIf="github">
-  <div class = "card">
+  <div class = "card ">
     <div class="card-header">
       {{github.name}} <small>{{github.login}}</small>
        works at {{github.company}}
