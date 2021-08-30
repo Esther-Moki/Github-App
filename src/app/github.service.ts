@@ -3,11 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable} from 'rxjs';
 
 
-// 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
-// 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
-
-// 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
-// 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
+// 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
 @Injectable({
   providedIn: 'root'
 })
